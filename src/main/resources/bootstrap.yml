@@ -1,0 +1,6 @@
+encrypt:
+  #key: ThisI_smY_SeCreT_KeyA1332
+  key-store:
+    location: file:///D:/Work/Projects/SIYProject/keystore/apiEncryptionKey.jks
+    password: 1q2w3e4r
+    alias: apiEncryptionKey

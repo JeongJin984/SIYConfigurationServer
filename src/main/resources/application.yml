@@ -1,0 +1,23 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/JeongJin984/SIYBackConfiguration.git
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans, httptrace,busrefresh
+
